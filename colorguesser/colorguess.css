@@ -1,0 +1,54 @@
+body {
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+html {
+	background: black;
+}
+
+#header {
+	color: white;
+	background: rgb(80, 120, 183);
+	font-size: 2.5rem;
+	transition: 1000ms;
+}
+
+#controlStrip {
+	color: rgb(80, 120, 183);
+	background: white;
+	font-weight: 700;
+	line-height: 1.3rem;
+}
+
+#controlStripContents {
+	width: 500px;
+}
+
+.selectedDifficulty {
+	background: rgb(80, 120, 183);
+	color: white;
+}
+
+#targetColor {
+	font-size: 3rem;
+}
+
+#playingField {
+	background: black;
+}
+
+.colorBlocks {
+	width: 500px;
+}
+
+.colorBlock {
+	height: 150px;
+	width: 150px;
+	border-radius: 25px;
+}
+
+.clickableElement {
+	cursor: pointer;
+}

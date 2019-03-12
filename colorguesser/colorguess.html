@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="colorguess.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Color Game</title>
+</head>
+<body>
+	<div id ="header" class="d-flex flex-column align-items-center justify-content-center">
+		<div>The Great</div>
+		<div id="targetColor"></div>
+		<div>Guessing Game</div>
+	</div>
+	<div id="controlStrip" class="d-flex justify-content-center">
+		<div id="controlStripContents" class="d-flex justify-content-between">
+			<span id="newColors" class="clickableElement">New Colors</span>
+			<span id="guessResult"></span>
+			<span id="difficulty">
+				<span id="easy" class="px-1 clickableElement">Easy</span>
+				<span id="hard" class="selectedDifficulty px-1"> Hard </span>
+			</span>
+		</div>
+	</div>
+	<div id = "playingField" class="d-flex flex-column align-items-center">
+		<div id = "topRow" class = "colorBlocks d-flex justify-content-between">
+			<div class="colorBlock clickableElement my-3">
+			</div>
+			<div class="colorBlock clickableElement my-3">
+			</div>
+			<div class="colorBlock clickableElement my-3">
+			</div>
+		</div>
+		<div id = "bottomRow" class = "colorBlocks d-flex justify-content-between">
+			<div class="colorBlock clickableElement">
+			</div>
+			<div class="colorBlock clickableElement">
+			</div>
+			<div class="colorBlock clickableElement">
+			</div>
+		</div>
+		<script type= "text/javascript" src="colorguess.js"></script>
+	</body>
+	</html>
