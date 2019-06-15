@@ -19,7 +19,7 @@ function generateGame() {
 		var r = getRandomInt(0, 255);
 		var g = getRandomInt(0, 255);
 		var b = getRandomInt(0, 255);
-		targetColor = "rgb(" + r +","+ g + "," + b + ")";
+		targetColor = `rgb(${r},${g},${b})`;
 		var currentSquare = document.querySelectorAll(".colorBlock")[i];
 		currentSquare.style.background = targetColor;
 		currentSquare.classList.remove("invisible");

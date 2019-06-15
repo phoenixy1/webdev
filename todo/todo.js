@@ -14,8 +14,8 @@ function init() {
 }
 
 function addTodo(value) {
-	$("#todos").append("<div class=\"todo clickable d-flex align-items-center\">" + 
-		"<span class = \"trash\"><i class=\"far fa-trash-alt\"></i></span><span class=\"todoText\">"+value+"</span></div>");
+	$("#todos").append(`<div class="todo clickable d-flex align-items-center">` + 
+		`<span class = "trash"><i class="far fa-trash-alt"></i></span><span class="todoText">${value}</span></div>`);
 	$(".todoText").last().on("click", function() {
 		$(this).toggleClass("done");
 	});
